@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,500;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.banner{
+min-height: 100vh;
+background-image: url(./images/desktop/image-hero.jpg);
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+display: flex;
+align-items: center;
+}
+
+.bannerText{
+    border: 2px solid white;
+    width: 650px;
+    height: 300px;
+    flex-wrap: wrap;
+}
+
+.bannerText > h1{
+    padding: 25px;
+    font-weight: 300;
+    font-size: 70px;
+    text-transform: uppercase;
+    color:rgb(255, 255, 255);
+}
+
+.innerWrapper{ 
+    width: 85%;
+    max-width: 1444px;
+    margin: 0 auto;
+}
+
+.pageHeader{
+    position: fixed;
+    width: 100%;
+    padding: 20px 0;
+}
+
+.mainMenu a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+li{
+    list-style-type: none;
+}
+
+.pageHeader > div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.mainMenu{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.aboutSection > div{
+    display: flex;
+    align-items: center;
+}
+
+.aboutSection img{
+    width: 50%;
+}
+
+.aboutImage{
+    background-color: rgb(255, 255, 255);
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.aboutText > h2{
+    text-transform: uppercase;
+    color:rgb(0, 0, 0);
+    font-size: 36px;
+    font-weight: 400;
+}
+
+.aboutText > p{
+    font-size: 18px;
+    margin-top: 30px;
+}
+
+.aboutText{
+display:flex;
+background-color: rgb(255, 255, 255);
+flex-direction: column;
+position: relative;
+right: 150px;
+top: 115px;
+height: 350px;
+width: 600px;
+padding-left: 80px;
+padding-top: 60px;
+}
+
+.portfolioCreations{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.portfolioCreations > h2{
+    color:rgb(0, 0, 0);
+    font-size: 32px;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.btn{
+    color:rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    padding: 10px 20px 10px 20px;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border: 2px solid black;
+    cursor:pointer;
+}
+
+.portfolioGallery{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+}
+
+.portfolioGallery2{
+    margin-top: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+}
+
+.portfolioImage{
+    width: 250px;
+    height: 450px;
+    margin-right: 6px;
+    margin-bottom: 35px;
+    position: relative;
+}
+
+.portfolioImage > h3{
+    color: rgb(255, 255, 255);
+    font-size: 45px;
+    font-weight: 200;
+    text-transform: uppercase;
+    position:absolute;
+    bottom: 60px;
+    left: 20px;
+}
+
+/* .footerLogoMedia > img{
+    background-color:red;
+} */
+
+.footerBackground{
+    background-color: rgb(0, 0, 0);
+    width: 100vw;
+    height: 120px;
+    padding: 20px 0px 20px 0px;
+}
+
+.copyrights{
+    color: white;
+}
+
+.footerLogoMedia{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+.footerMedia{
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 15px;
+} 
+
+.footerAboutInfo{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+
+.copyrights > span{
+    color:rgb(107, 104, 104)
+}
+
+ @media (max-width:768px){
+    .bannerText{
+        width:intial;
+        min-width: 50%;
+    }   
+}
+
+@media (max-width: 992px){
+    .aboutText{
+        position: initial;
+        text-align: center;
+    }
+
+    .aboutSection > div{
+        flex-direction: column;
+    }
+
+    .aboutSection img{
+        width: 85%;
+    }
+}
+
+
